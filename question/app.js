@@ -134,6 +134,54 @@ console.log(`${x}を${y}で割った余りは${remainder(5,3)}です。`);
 //応用編
 
 //Q1
-let num = Math.random(0,10);
 
-getconsole(num);
+console.log(Math.floor(Math.random() * 10));
+
+//Q2
+
+function sayHi(){
+console.log('Hello World');
+}
+setTimeout(sayHi,3000);
+
+//Q3
+let num =9;
+
+if(num>0){
+    console.log('num is greater than 0');
+}else if(num<0){
+    console.log('num is less than 0');
+}else{
+    console.log('num is 0');
+}
+
+//Q4
+
+
+function increment(){
+    let numbers = [];
+    for(let i=0; i<=99; i++){
+    numbers.push(i);
+    }
+    return numbers;
+}
+
+console.log(increment());
+
+
+//Q5
+
+
+
+let mixed = [4, '2', 5, '8', '9', 0, 1];
+
+for(let i=0; i<=6; i++){
+    if(typeof mixed[i] === "number" && mixed[i] % 2 == 0){
+        console.log('even');
+    }else if(typeof mixed[i] === "number" && mixed[i] % 2 != 0){
+        console.log('odd');
+    }else{
+        console.log('not number');
+    }
+}
+
