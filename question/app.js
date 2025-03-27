@@ -49,22 +49,22 @@ console.log(playerList[1].favorites[1]);
 
 //Q5
  
-let ave;
+let sum = 0;
 let count = 0;
 
 for(let i=0; i<=2; i++) {
-    ave += playerList[i].age;
+    sum += playerList[i].age;
     if(i == 0){
-        ave = playerList[i].age;
+        sum = playerList[i].age;
     }
     count++;
 }
 
-function average(num){
-   return num / count;
+function average(sum, count){
+   return sum / count;
 }
 
-console.log(average(ave));
+console.log(average(sum, count));
 
 //Q6
 
@@ -94,31 +94,31 @@ user.sayHello();
 
 let calc = {};
 
-calc.add = function(x,y){
-    console.log(x+y);
+calc.add = function(x, y){
+    console.log(x + y);
 }
-calc.substract = function(x,y){
-    console.log(x-y);
+calc.substract = function(x, y){
+    console.log(x - y);
 }
-calc.multiply = function(x,y){
-    console.log(x*y);
+calc.multiply = function(x, y){
+    console.log(x * y);
 }
-calc.divide = function(x,y){
-    console.log(x/y);
+calc.divide = function(x, y){
+    console.log(x / y);
 }
 
 
-calc.add(3,4);
-calc.substract(12,2);
-calc.multiply(7,7);
-calc.divide(25,5);
+calc.add(3, 4);
+calc.substract(12, 2);
+calc.multiply(7, 7);
+calc.divide(25, 5);
 
 
 //Q9
 let x = 5;
 let y = 3;
 
-function remainder(x,y){
+function remainder(x, y){
     return x % y;
 }
 
@@ -140,9 +140,9 @@ console.log(Math.floor(Math.random() * 10));
 //Q2
 
 function sayHi(){
-console.log('Hello World');
+    console.log('Hello World');
 }
-setTimeout(sayHi,3000);
+setTimeout(sayHi, 3000);
 
 //Q3
 let num =9;
